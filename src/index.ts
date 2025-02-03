@@ -1,9 +1,10 @@
 import e from "express";
-import { RedisConnect } from "./api/util/util";
+import { router } from "./api/Routes/wether.router";
+import { PORT } from "./api/config/config";
 
 const app = e();
 
 app.use(e.json());
-RedisConnect();
+app.use("/api", router);
 
-app.listen(8000);
+app.listen(PORT);
