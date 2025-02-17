@@ -10,9 +10,9 @@
     "typescript": "^5.7.3"
   },
   "scripts": {
-    "tsc": "npx tsc --watch --noEmit",
+    "tsc": "npx tsc ",
     "dev": "nodemon ",
-    "start": "ts-node ./dist/src/index.js"
+    "start": "ts-node ./dist/index.js"
   },
   "devDependencies": {
     "@tsconfig/node22": "^22.0.0",
